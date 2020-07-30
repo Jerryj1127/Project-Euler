@@ -5,6 +5,9 @@
 By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.'''
 
 #code
+import time
+start_time = time.time()
+
 num1,num2,num3,sum = 0,1,1,0
 limit = 4000000
 
@@ -20,3 +23,5 @@ while(num3 < limit):
     num3 = num1+num2
 
 print(sum)
+
+print("\n--- %s seconds ---" % (time.time() - start_time))

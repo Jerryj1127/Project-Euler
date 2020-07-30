@@ -21,13 +21,13 @@ def count(num):
     if len(str(num)) <= 2:
         sum_n += ten(num)
     elif len(str(num)) == 3:
-        sum_n = sum_n + ones[num//100] + 7 + ten(num%100)
+        sum_n = sum_n + ones[num//100] + 7 + ten(num%100) # 7---> len('hundred')
         if num%100 != 0:
-            sum_n += 3
+            sum_n += 3    #3 ---> len('and') 
     elif len(str(num)) == 4:
-        sum_n += ones[num//1000] + 8
+        sum_n += ones[num//1000] + 8  # 8 ---> len('thousand')
         
-for i in range(1001):
+for i in range(10001):
     count(i)
 print(sum_n)
 

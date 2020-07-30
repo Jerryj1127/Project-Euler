@@ -1,3 +1,6 @@
+import time
+start_time = time.time()
+
 limit = 20
 num = 1
 
@@ -13,3 +16,5 @@ for i in range(1,limit+1):
             num *= factors(i)
 print(num)
 #232792560
+
+print("\n--- %s seconds ---" % (time.time() - start_time))

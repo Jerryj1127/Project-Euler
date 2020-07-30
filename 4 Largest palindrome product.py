@@ -1,3 +1,6 @@
+import time
+start_time = time.time()
+
 right = 999
 left = 999
 big =0
@@ -24,3 +27,5 @@ while(right>100):
         right -= 1
 
 print(big,"--->", data)
+
+print("\n--- %s seconds ---" % (time.time() - start_time))

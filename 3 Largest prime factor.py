@@ -3,6 +3,9 @@
 What is the largest prime factor of the number 600851475143 ?'''
 
 #code
+import time
+start_time = time.time()
+
 from math import sqrt
 limit =  600851475143
 
@@ -31,3 +34,5 @@ print('done')
         else:
             i+=1
 """
+
+print("\n--- %s seconds ---" % (time.time() - start_time))

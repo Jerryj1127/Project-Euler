@@ -1,3 +1,6 @@
+import time
+start_time = time.time()
+
 from math import sqrt
 a,b,c = 0,0,0
 
@@ -6,3 +9,5 @@ for a in range(999):
         c = sqrt(a**2 + b**2)
         if a+b+c == 1000:
             print(a*b*c)
+
+print("\n--- %s seconds ---" % (time.time() - start_time))

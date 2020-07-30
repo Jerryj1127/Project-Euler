@@ -4,6 +4,9 @@ Find the sum of all the multiples of 3 or 5 below 1000.'''
 
 #code
 
+import time
+start_time = time.time()
+
 limit = 1000
 sum = 0
 for i in range(limit):
@@ -11,3 +14,5 @@ for i in range(limit):
         sum += i
 
 print(sum)
+
+print("\n--- %s seconds ---" % (time.time() - start_time))

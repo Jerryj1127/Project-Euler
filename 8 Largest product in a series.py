@@ -22,6 +22,8 @@ num = '''73167176531330624919225119674426574742355349194934
 71636269561882670428252483600823257530420752963450'''
 
 string = "".join(num.split())
+import time
+start_time = time.time()
 
 while(n!=(1000-13)):
     product = 1
@@ -33,3 +35,5 @@ while(n!=(1000-13)):
     n+=1
 print(big)
 print('Done')
+
+print("\n--- %s seconds ---" % (time.time() - start_time))

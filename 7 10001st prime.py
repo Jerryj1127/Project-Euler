@@ -1,3 +1,6 @@
+import time
+start_time = time.time()
+
 limit = 10001
 count= 1
 i = 1
@@ -12,3 +15,5 @@ while(count != limit+1):
     if prime(i):
         count +=1
 print(i)
+
+print("\n--- %s seconds ---" % (time.time() - start_time))
