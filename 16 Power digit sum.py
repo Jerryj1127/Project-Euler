@@ -6,7 +6,7 @@ for i in str(value):
     sum += int(i)
 print('Sum of digits of 2**1000:', sum)
 
-#          __OR__( Later i cam eup with a single line solution)
+#          __OR__      ( Later i came up with a single line solution)
 
 #print(sum([int(x) for x in str(2**1000)]))
 
